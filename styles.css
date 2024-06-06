@@ -1,0 +1,122 @@
+/* Estilos básicos para el cuerpo del documento */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3f4f6;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilos para el contenedor principal de la calculadora */
+.calculator {
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 320px;
+}
+
+/* Estilos para la pantalla de la calculadora */
+.calculator-screen {
+    width: 87.75%;
+    height: 80px;
+    border: none;
+    background-color: #252525;
+    color: #fff;
+    text-align: right;
+    padding: 0 20px;
+    font-size: 2.5rem;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+/* Estilos para el contenedor de los botones */
+.calculator-keys {
+    display: flex;
+    background-color: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* Estilos para los botones numéricos */
+.number-keys {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    flex: 3;
+    padding: 20px;
+}
+
+/* Estilos para los botones de operadores */
+.operator-keys {
+    display: grid;
+    grid-template-rows: repeat(4, 60px);
+    gap: 10px;
+    flex: 1;
+    padding: 20px 10px 20px 0;
+}
+
+/* Estilos generales para todos los botones */
+button {
+    height: 60px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.5rem;
+    background-color: #f2f2f2;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Estilos para los botones de operadores */
+button.operator {
+    background-color: #ff9500;
+    color: white;
+}
+
+/* Estilos para el botón igual */
+button.equal-sign {
+    background-color: #ff9500;
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* Estilos para el botón de borrar */
+button.all-clear {
+    background-color: #f44336;
+    color: white;
+}
+
+/* Efectos de hover y active para los botones */
+button:hover {
+    background-color: #d4d4d2;
+}
+
+button:active {
+    background-color: #bbb;
+}
+
+button.operator:hover {
+    background-color: #d47c00;
+}
+
+button.equal-sign:hover {
+    background-color: #d47c00;
+}
+
+button.operator:active {
+    background-color: #915400;
+}
+
+button.equal-sign:active {
+    background-color: #915400;
+}
+
+button.all-clear:hover {
+    background-color: #b43930;
+}
+
+button.all-clear:active {
+    background-color: #862c26;
+}
